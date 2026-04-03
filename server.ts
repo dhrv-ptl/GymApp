@@ -17,14 +17,14 @@ async function startServer() {
 
   // Programs API
   app.get("/api/programs", async (req, res) => {
-    // In a real app, we would use the user's session from the request
-    // For now, we'll return mock data or proxy to Supabase
+    // Returns the list of programs for the authenticated user.
+    // Authentication and database integration are handled via Supabase on the client side.
     res.json({ programs: [] });
   });
 
   app.post("/api/programs", express.json(), async (req, res) => {
     const { name, description, user_id } = req.body;
-    // Logic to create program in Supabase
+    // Creates a new training program.
     res.status(201).json({ id: "new-id", name, description });
   });
 

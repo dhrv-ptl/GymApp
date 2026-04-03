@@ -8,8 +8,6 @@ A personal gym tracking web app built with React, Vite, and Supabase. Log workou
 - **Training Programs** – Create and organize multi-day workout programs.
 - **Workout Logging** – Record sets, reps, and weights for each exercise.
 - **Dashboard** – View recent activity and progress at a glance.
-- **AI Suggestions** – Optional Gemini-powered exercise and program suggestions.
-
 ## Tech Stack
 
 | Layer | Library / Service |
@@ -75,7 +73,6 @@ npm start       # Serves the built app via Express
 |---|---|---|
 | `VITE_SUPABASE_URL` | ✅ | Your Supabase project URL |
 | `VITE_SUPABASE_ANON_KEY` | ✅ | Your Supabase anonymous (public) key |
-| `GEMINI_API_KEY` | Optional | Gemini API key for AI-powered features |
 | `APP_URL` | Optional | Base URL of the app (used for OAuth callbacks) |
 
 ## Project Structure
